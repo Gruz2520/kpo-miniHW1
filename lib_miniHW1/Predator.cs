@@ -10,7 +10,7 @@ namespace lib_miniHW1
     {
         public override bool CanInteractWithVisitors()
         {
-            return false; // Хищники не могут взаимодействовать с посетителями
+            return false;
         }
     }
 }

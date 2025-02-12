@@ -11,6 +11,6 @@ namespace lib_miniHW1
         public int InventoryNumber { get; set; }
         public double FoodConsumption { get; set; }
 
-        public abstract bool CanInteractWithVisitors(); // Проверка возможности взаимодействия с посетителями
+        public abstract bool CanInteractWithVisitors(); 
     }
 }

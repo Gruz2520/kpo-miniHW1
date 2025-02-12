@@ -8,7 +8,7 @@ namespace lib_miniHW1
 {
     public abstract class Herbivore : Animal
     {
-        public int KindnessLevel { get; set; } // Уровень доброты (от 1 до 10)
+        public int KindnessLevel { get; set; }
 
         public override bool CanInteractWithVisitors()
         {
