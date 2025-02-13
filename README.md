@@ -1,5 +1,5 @@
 ## **Проект "Зоопарк"**
-
+### by Егор Грузинцев 234
 ### **Описание проекта**
 Проект представляет собой консольное приложение, моделирующее работу зоопарка. В зоопарке можно:
 - Добавлять животных и вещи.
@@ -96,9 +96,10 @@ public interface IAnimalFactory
 
 public class MonkeyFactory : IAnimalFactory
 {
-    public Animal Create(int id, string name, string description)
+    public Animal Create(int inventoryNumber, double foodConsumption)
     {
-        return new Monkey(id, 5, 8) { Name = name, Description = description };
+        DataProcessing.ReadInt("Введите уровень доброты (1-10): ", out int kindnessLevel, 1, 10);
+        return new Monkey(inventoryNumber, foodConsumption, kindnessLevel);
     }
 }
 ```
